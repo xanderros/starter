@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>site-name</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			color: #333;
+			font-family: 'Trebuchet MS', sans-serif;
+			font-size: 18px;
+			line-height: 1.5;
+		}
+		.pl-box {
+			margin: 0 auto;
+			width: 100%;
+			max-width: 1024px;
+			min-width: 320px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		.pl-header {
+			background-color: #0176d2;
+			padding: 20px 0;
+		}
+		.pl-title {
+			font-size: 20px;
+			color: #fff;
+		}
+		.pl-title__site {
+			font-weight: bold;
+		}
+		.pl-content {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
+		.pl-links {
+			counter-reset: ol-counter;
+			padding-left: 27px;
+		}
+		.pl-links__row {
+			position: relative;
+			list-style: none;
+			padding-left: 8px;
+		}
+		.pl-links__row:nth-child(n+2) {
+			margin-top: 10px;
+		}
+		.pl-links__row:before {
+			position: absolute;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #333;
+			top: 0;
+			right: 100%;
+			content: counter(ol-counter);
+			counter-increment: ol-counter;
+			width: 27px;
+			height: 27px;
+			background-color: #fdd024;
+			font-family: 'Trebuchet MS', sans-serif;
+			font-size: 18px;
+			line-height: 27px;
+			font-weight: bold;
+			text-align: right;
+		}
+		.pl-links__item {
+			text-decoration: none;
+			color: #333;
+		}
+		.pl-links__name {
+			font-weight: bold;
+			border-bottom: 1px solid #333;
+		}
+		.pl-links__progress {
+		}
+		.pl-links__icon {
+			width: 2em;
+			height: 1em;
+			fill: #000;
+		}
+	</style>
+</head>
+<body>
+
+<svg style="display:none" xmlns="http://www.w3.org/2000/svg">
+	<symbol id="icon-link" viewBox="0 0 20 10">
+		<title>
+			Shape
+		</title>
+		<path d="M1.9 5c0-1.71 1.39-3.1 3.1-3.1h4V0H5C2.24 0 0 2.24 0 5s2.24 5 5 5h4V8.1H5C3.29 8.1 1.9 6.71 1.9 5zM6 6h8V4H6v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1 0 1.71-1.39 3.1-3.1 3.1h-4V10h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"
+		      fill-rule="evenodd"/>
+	</symbol>
+</svg>
+
+<header class="pl-header">
+	<div class="pl-box">
+		
+		<div class="pl-title">
+			<strong class="pl-title__site">site-name</strong> updated 02.05.2019, 2 pages
+		</div>
+	</div>
+</header>
+
+<div class="pl-content">
+	<div class="pl-box">
+		<ol class="pl-links">
+			
+			
+			<li class="pl-links__row"
+			>
+
+				<a class="pl-links__item" target="_blank" href="main.html"><strong class="pl-links__name">main</strong>
+					<!--<svg class="pl-links__icon icon icon-link"><use xlink:href="#icon-link"></use></svg>-->
+				</a>
+
+				<div class="pl-links__progress">
+					
+					<i style="width:50%"></i>
+				</div>
+
+			</li>
+			
+			<li class="pl-links__row"
+			>
+
+				<a class="pl-links__item" target="_blank" href="second.html"><strong class="pl-links__name">second</strong>
+					<!--<svg class="pl-links__icon icon icon-link"><use xlink:href="#icon-link"></use></svg>-->
+				</a>
+
+				<div class="pl-links__progress">
+					
+					<i style="width:100%"></i>
+				</div>
+
+			</li>
+			
+		</ol>
+	</div>
+</div>
+
+</body>
+</html>
