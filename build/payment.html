@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Payment page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/style.css">
+  </head>
+
+  <body>
+    <!-- BEGIN content -->
+    <header class="header header_light">
+      <div class="header__box box">
+        <a class="logo" href="/">
+          <svg class="logo__icon" width="124" height="49">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-logo_white"></use>
+          </svg>
+        </a>
+        <div class="header__container">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#"><span class="nav__line">Features</span></a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"><span class="nav__line">Pricing</span></a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#"><span class="nav__line">Compare Plans</span></a>
+              </li>
+            </ul>
+          </nav>
+          <a class="login" href="#" data-popup="popup_login">
+            <span class="login__line">Log In</span>
+            <svg class="login__icon" width="13" height="13">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </a>
+        </div>
+        <a class="nav-btn" href="#">
+          <span class="nav-btn__line"></span>
+        </a>
+      </div>
+    </header>
+    <div class="wrapper">
+      <main class="wrapper__content">
+        <div class="enjoy">
+          <div class="box">
+            <h1 class="enjoy__title">Get ready to enjoy Memorable</h1>
+            <div class="enjoy__desc">Sign up today for Everything to start your 14-day trial!</div>
+          </div>
+        </div>
+        <div class="box">
+          <form class="payment-section mb ">
+            <div class="step">
+              <div class="step__side">
+                <div class="step__counter"> Step 1 of 4 </div>
+                <div class="step__title"> Choose your billing cycle </div>
+                <div class="step__bottom">
+                  <a href="#" class="step__link link">Already have an account?</a>
+                </div>
+              </div>
+              <div class="step__base">
+                <div class="form form__choice">
+                  <div class="form__bar radio radio_bar">
+                    <input class="radio__input" type="radio" id="billing_annual" name="radio" checked>
+                    <label class="radio__label" for="billing_annual">
+                      <div class="radio__top">
+                        <div class="radio__caption">Annual</div>
+                        <div class="radio__description">Save 20%</div>
+                      </div>
+                      <div class="radio__bottom">
+                        <div class="radio__tarif">
+                          <span class="radio__currency">$</span>
+                          <span class="radio__value">47</span>
+                          <span class="radio__value-sm">20</span>
+                        </div>
+                        <div class="radio__mark">One payment</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form__bar radio radio_bar">
+                    <input class="radio__input" type="radio" id="billing_monthly" name="radio">
+                    <label class="radio__label" for="billing_monthly">
+                      <div class="radio__top">
+                        <div class="radio__caption">Monthly</div>
+                      </div>
+                      <div class="radio__bottom">
+                        <div class="radio__tarif">
+                          <span class="radio__currency">$</span>
+                          <span class="radio__value">59</span>
+                        </div>
+                        <div class="radio__mark">Recurring billing</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__side">
+                <div class="step__counter"> Step 2 of 4 </div>
+                <div class="step__title"> Create your account </div>
+                <div class="step__bottom">
+                  <a href="#" class="step__link link">Already have an account?</a>
+                </div>
+              </div>
+              <div class="step__base">
+                <div class="form">
+                  <div class="form__row form__grid">
+                    <div class="form__cell">
+                      <input class="form__input" type="text" placeholder="First name">
+                      <div class="form__error-message">Please enter first name</div>
+                    </div>
+                    <div class="form__cell">
+                      <input class="form__input" type="text" placeholder="Last name">
+                      <div class="form__error-message">Please enter last name</div>
+                    </div>
+                  </div>
+                  <div class="form__row">
+                    <input class="form__input" type="email" placeholder="Email address">
+                    <div class="form__error-message">Please enter email address</div>
+                  </div>
+                  <div class="form__row form__error">
+                    <input class="form__input" type="password" placeholder="Password">
+                    <div class="form__error-message">Please enter password</div>
+                  </div>
+                  <div class="form__row">
+                    <input class="form__input" type="password" placeholder="Confirm password">
+                    <div class="form__error-message">Please confirm your password</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__side">
+                <div class="step__counter"> Step 3 of 4 </div>
+                <div class="step__title"> Your billing information </div>
+                <div class="step__bottom">
+                  <a href="#" class="step__link link">Pay using a dierent method</a>
+                </div>
+              </div>
+              <div class="step__base">
+                <div class="form">
+                  <div class="form__row">
+                    <input class="form__input" type="text" placeholder="Credit card number">
+                    <div class="form__error-message">Please enter credit card number</div>
+                  </div>
+                  <div class="form__row form__grid">
+                    <div class="form__cell">
+                      <input class="form__input" type="text" placeholder="Security Code">
+                      <div class="form__error-message">Please enter security Code</div>
+                    </div>
+                    <div class="form__cell">
+                      <input class="form__input" type="text" placeholder="MM/YY">
+                      <div class="form__error-message">Please enter MM/YY</div>
+                    </div>
+                  </div>
+                  <div class="form__row form__grid">
+                    <div class="form__cell form__cell_country">
+                      <select class="form__select">
+                        <option class="form__option">Country</option>
+                        <option class="form__option">USA</option>
+                        <option class="form__option">Belarus</option>
+                      </select>
+                      <div class="form__error-message">Please choose your country</div>
+                    </div>
+                    <div class="form__cell form__cell_billing">
+                      <input class="form__input" type="text" placeholder="Billing zip code">
+                      <div class="form__error-message">Please enter billing zip code</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__side">
+                <div class="step__counter"> Step 4 of 4 </div>
+                <div class="step__title"> Start using Memorable </div>
+                <div class="step__price">
+                  <div class="price">
+                    <div class="price__wrap">
+                      <div class="price__sign"><span class="price__letters">M</span></div>
+                      <div class="price__desc"> Unlimited Storage<br>
+                        <span class="price__mark">300</span> moments/mo.* </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="step__base step__base_wide">
+                <div class="step__info info info_payment">
+                  <ul class="info__list info__list_wide">
+                    <li class="info__item">100% safe & secure</li>
+                    <li class="info__item">Professional scanning</li>
+                    <li class="info__item">State-of-the-art restoration</li>
+                    <li class="info__item">Timeline organization</li>
+                    <li class="info__item">Unlimited photo & video storage</li>
+                    <li class="info__item">Sync for iOS, Android, Windows, Mac</li>
+                  </ul>
+                  <ul class="info__list info__list_narrow">
+                    <li class="info__item">Easy download</li>
+                    <li class="info__item">Cloud export</li>
+                    <li class="info__item">Easy sharing</li>
+                    <li class="info__item">Apple TV app</li>
+                    <li class="info__item">High-res streaming</li>
+                    <li class="info__item">Free shipping</li>
+                  </ul>
+                </div>
+                <div class="step__text"> Your free trial ends on Friday, March 15, 2019. If you don’t cancel your free trial by that date, we’ll charge you $47.20 yearly (taxes included) until you cancel your plan. Charges won’t be refunded when you cancel, unless it’s legally required. Your payment data is encrypted and secure. All amounts shown are in USD. </div>
+                <div class="step__checkbox checkbox">
+                  <input class="checkbox__input" type="checkbox" id="checkbox_1">
+                  <label class="checkbox__label" for="checkbox_1">I agree to the Memorable Terms and the Automatic Renewal Terms above</label>
+                </div>
+                <div class="step__button">
+                  <button class="btn btn_type_dark">Start your free trial</button>
+                  <button class="btn btn_type_dark btn_loading" type="submit"><span class="loader"></span>Start your free trial</button>
+                  <div class="action"> or <a href="#" class="action__link">purchase Memorable Everything now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer class="footer footer_light">
+        <div class="box">
+          <div class="footer__row">
+            <div class="footer__aside">
+              <a href="#" class="footer__dark-link">Terms & Privacy</a>
+            </div>
+            <div class="footer__copy">&copy; 2019 Memorable. All rights reserved.</div>
+          </div>
+        </div>
+      </footer>
+      <div class="popup" id="popup_login">
+        <div class="popup__box">
+          <div class="popup__body">
+            <div class="popup__title">Log in</div>
+            <div class="popup__content">
+              <form class="form">
+                <div class="form__row">
+                  <input class="form__input" type="email" placeholder="Email address">
+                  <div class="form__error-message">Please enter email address</div>
+                </div>
+                <div class="form__row">
+                  <input class="form__input" type="password" placeholder="Password">
+                  <div class="form__forgot">
+                    <a href="#" data-popup="popup_pass" class="form__f-link">Forgot password?</a>
+                  </div>
+                  <div class="form__error-message">Please enter password</div>
+                </div>
+                <div class="form__flex">
+                  <div class="form__item">
+                    <button class="btn btn_type_dark" type="submit">Log in now</button>
+                  </div>
+                  <div class="form__item">
+                    <a href="#" class="link">Registration</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <a class="popup__close" href="#">
+              <svg class="popup__close-icon" width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-close"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="popup" id="popup_pass">
+        <div class="popup__box">
+          <div class="popup__body">
+            <div class="popup__title">Password recovery</div>
+            <div class="popup__content">
+              <form action="" class="form">
+                <div class="form__row">
+                  <div class="form__text"> To create a new password, enter your email </div>
+                </div>
+                <div class="form__row">
+                  <input class="form__input" type="email" placeholder="Email address">
+                  <div class="form__error-message">Please enter email address</div>
+                </div>
+                <div class="form__bottom">
+                  <button class="btn btn_type_dark btn_wide" type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+            <a class="popup__close" href="#">
+              <svg class="popup__close-icon" width="16" height="16">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-close"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END content -->
+    <!-- BEGIN scripts -->
+    <script type="text/javascript" src="js/script.min.js"></script>
+    <!-- END scripts -->
+  </body>
+
+</html>

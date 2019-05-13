@@ -1,0 +1,79 @@
+//*** --- Colors --- *** //
+
+// basic site colors
+$black: #2d2e30;
+$white: #fff;
+$blue: #1daeec;
+$blue-light: #ecf3fd;
+$blue-transparent: #8ed7f6;
+$gray: #808080;
+$gray-light: #bababa;
+$red: #f00;
+
+
+// main colors of the site
+$main-color: $blue-light;
+
+// text colors
+$text-color: $black;
+
+
+// background colors
+$bg-overlay: rgba(0, 0, 0, .4);
+$bg-gray: #F0F1F5;// form etc.
+$bg-blue: #12245F;// main top screen
+
+//*** --- Typography --- *** //
+
+// basic typography
+$wigrum: 'Wigrum', sans-serif;
+$filson: 'Filson Soft', sans-serif;
+$font-family: $wigrum;
+$font-size: 14px;
+$line-height: 1;
+
+//*** --- Form settings --- *** //
+
+$form-error-border: #e00;
+$form-error-text: #e00;
+$form-border: $gray-light;
+$form-border-hover: $gray-light;
+$form-border-focus: darken($gray-light,15%);
+$form-disabled-text: #eee;
+$form-height: 58px;
+$form-placeholder: #aaa;
+$form-paddings: 25px;
+
+//*** --- Layout --- *** //
+
+// breakpoints
+$screen-xs: 360px;
+$screen-sm: 576px;
+$screen-md: 767px;
+$screen-lg: 991px;
+$screen-xl: 1199px;
+
+// widths
+$width-small: 964px;
+$width-default: 1200px;
+$width-big: 1280px;
+
+// main paddings
+$padding-small: 20px;
+$padding-middle: 25px;
+$padding-big: 30px;
+
+// header height
+$header-height: 152px;
+$header-height-scrolled: 76px;
+$header-height-mob: 65px;
+
+//*** --- Transitions --- *** //
+/* default for most elements */
+$transition-time: 0.3s;
+$transition-style: ease;
+$transition: 0.3s ease;
+
+$transition-time-nav: 0.2s; // transition for navigation
+$transition-time-modal: 0.3s; // transition for modal window
+

@@ -1,0 +1,33 @@
+<div class="popup" id="popup_login">
+  <div class="popup__box">
+    <div class="popup__body">
+      <div class="popup__title">Log in</div>
+      <div class="popup__content">
+        <form class="form">
+          <div class="form__row">
+            <input class="form__input" type="email" placeholder="Email address">
+            <div class="form__error-message">Please enter email address</div>
+          </div>
+          <div class="form__row">
+            <input class="form__input" type="password" placeholder="Password">
+            <div class="form__forgot">
+              <a href="#" data-popup="popup_pass" class="form__f-link">Forgot password?</a>
+            </div>
+            <div class="form__error-message">Please enter password</div>
+          </div>
+          <div class="form__flex">
+            <div class="form__item">
+              <button class="btn btn_type_dark" type="submit">Log in now</button>
+            </div>
+            <div class="form__item">
+                <a href="#" class="link">Registration</a>
+            </div>
+          </div>
+        </form>
+      </div>
+      <a class="popup__close" href="#">
+        <svg class="popup__close-icon" width="16" height="16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/sprite.svg#icon-close"></use></svg>
+      </a>
+    </div>
+  </div>
+</div>

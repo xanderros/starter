@@ -1,0 +1,7 @@
+ProjectTitle: Memorable
+
+PageList:
+- file: main.html
+  ready: 50
+- file: payment.html
+  ready: 100

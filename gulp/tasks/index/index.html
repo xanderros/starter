@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
 	<meta charset="UTF-8">
-	<title>Memorable</title>
+	<title><%= pages.ProjectTitle %></title>
 	<style>
 		* {
 			margin: 0;
@@ -100,9 +100,17 @@
 
 <header class="pl-header">
 	<div class="pl-box">
-		
+		<%
+		date = new Date(_.now());
+		if(date.getMonth()+1<10){ month = '0' + (date.getMonth()+1);}
+		else{ month = date.getMonth()+1; }
+
+		if(date.getDate()<10){ day = '0' + (date.getDate());}
+		else{ day = date.getDate(); }
+		%>
 		<div class="pl-title">
-			<strong class="pl-title__site">Memorable</strong> updated 14.05.2019, 2 pages
+			<strong class="pl-title__site"><%= pages.ProjectTitle %></strong> updated <%= day %>.<%= month %>.<%=
+			date.getFullYear() %>, <%= pages.PageList.length %> pages
 		</div>
 	</div>
 </header>
@@ -110,36 +118,23 @@
 <div class="pl-content">
 	<div class="pl-box">
 		<ol class="pl-links">
-			
-			
+			<% i = 0;%>
+			<% _.each(pages.PageList, function(page) { i++; %>
 			<li class="pl-links__row"
-			>
+			<% if(!page.ready) { %> class="is-notready" <% } %>>
 
-				<a class="pl-links__item" target="_blank" href="main.html"><strong class="pl-links__name">main</strong>
+				<a class="pl-links__item" target="_blank" href="<%= page.file %>"><strong class="pl-links__name"><%=
+					_.split(page.file, '.', 1) %></strong>
 					<!--<svg class="pl-links__icon icon icon-link"><use xlink:href="#icon-link"></use></svg>-->
 				</a>
 
 				<div class="pl-links__progress">
-					
-					<i style="width:50%"></i>
+					<% if(!page.ready) page.ready = 0; %>
+					<i style="width:<%= page.ready %>%"></i>
 				</div>
 
 			</li>
-			
-			<li class="pl-links__row"
-			>
-
-				<a class="pl-links__item" target="_blank" href="payment.html"><strong class="pl-links__name">payment</strong>
-					<!--<svg class="pl-links__icon icon icon-link"><use xlink:href="#icon-link"></use></svg>-->
-				</a>
-
-				<div class="pl-links__progress">
-					
-					<i style="width:100%"></i>
-				</div>
-
-			</li>
-			
+			<% }) %>
 		</ol>
 	</div>
 </div>
