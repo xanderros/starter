@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home2/humandon/test_html/
-    - /bin/cp -R * $DEPLOYPATH
+    - export DEPLOYPATH=/home2/x47491/public_html/starter.xander.work/
+    - /bin/cp * $DEPLOYPATH
