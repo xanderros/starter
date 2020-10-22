@@ -42,7 +42,7 @@ _This is a full list of tasks, that we use in our projects, but not all of them 
 
 ## Flags
 
-We have several 5 flags.
+We have several 222 flags.
 
 * `gulp --open` or `gulp server --open` - run dev server and then open preview in browser
 * `gulp --tunnel=[name]` or `gulp server --tunnel [name]` - runs dev server and allows you to easily share a web service on your local development machine (powered by [localtunnel.me](https://localtunnel.me/)). Your local site will be available at `[name].localtunnel.me`.
