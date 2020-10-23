@@ -1,0 +1,34 @@
+RewriteEngine On 
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteBase /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP
+RewriteRule ^([^.]+)\.html$ https://humandone.com/$1 [R=301,L]
+
+RewriteCond %{REQUEST_URI} !(\.[^./]+)$
+RewriteCond %{REQUEST_fileNAME} !-d
+RewriteCond %{REQUEST_fileNAME} !-f
+RewriteRule (.*) /$1.html [L]
+
+<IfModule mod_expires.c>  
+
+ExpiresActive On  
+
+ExpiresByType image/x-icon "access plus 7 days"
+ExpiresByType image/jpeg "access plus 7 days"
+ExpiresByType image/png "access plus 7 days"
+ExpiresByType image/webp "access plus 7 days"
+ExpiresByType text/css "access plus 5 minutes"
+ExpiresByType text/javascript "access plus 5 minutes"
+ExpiresByType application/javascript "access plus 5 minutes"
+ExpiresByType application/x-javascript "access plus 5 minutes"
+ExpiresByType text/html "access plus 5 minutes"
+ExpiresByType application/xhtml+xml "access plus 10 minutes"
+
+ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+ExpiresByType application/x-font-woff "access plus 1 year"
+ExpiresByType application/x-font-woff2 "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"
+
+</IfModule> 

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+  <defs>
+    <linearGradient id="coldmailing-a" x1="3.625%" x2="100%" y1="3.625%" y2="100%">
+      <stop offset="0%" stop-color="#FF9BDC"/>
+      <stop offset="100%" stop-color="#914FBE"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="37.5" cy="37.5" r="37.5" fill="url(#coldmailing-a)"/>
+    <path fill="#FFF" fill-rule="nonzero" d="M49.23 22.161l2.712 10.121a2.206 2.206 0 01-4.261 1.142l-.626-2.333-6.66 11.538a2.206 2.206 0 01-2.868.884l-.145-.077-5.731-3.309-6.067 10.507a2.206 2.206 0 01-3.82-2.206l7.169-12.417a2.206 2.206 0 013.013-.807l5.731 3.308 5.934-10.278-3.36.9a2.206 2.206 0 01-2.655-1.408l-.047-.151a2.206 2.206 0 011.56-2.702l10.121-2.712z"/>
+  </g>
+</svg>

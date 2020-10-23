@@ -1,0 +1,165 @@
+---
+title: Gymfit | Humandone
+
+keywords:
+description:
+
+url: cases/gymfit
+
+socialTitle: Gymfit
+socialDescription: Find the differences in colors and pictures in time!
+socialImg:
+socialImgSquare:
+socialImgTwitter:
+
+scrollAnimations: true
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="trigger" id="triggerParallaxTop"></div>
+
+<article role="main" class="nav-color-black">
+  <header class="top top_case">
+    <div class="top__box box box_small box_padding">
+      <h1 class="caption">Gymfit</h1>
+    </div>
+  </header>
+  <div class="board">
+    <div class="board__pic parallax-top">
+      {{ img('gymfit-hero', 'jpg', 'Gymfit', 'nolazy') }}
+    </div>
+  </div>
+  <div class="box box_small">
+    <div class="promo pt-150 mb-120">
+      <div class="promo__side">
+        <h4 class="lead">The plan</h4>
+      </div>
+      <div class="promo__base">
+        <p class="promo__text">
+          Gymfit is more than just an app. It was created in order to become one of the tools aimed at making your workouts easier.
+        </p>
+        <p class="promo__text">
+          Gymfit is a real friend of yours working as a calendar where you can book appropriate time and make appointments in you gyms.
+        </p>
+        <div class="promo__tags">
+          <ul class="tags">
+            <li class="tags__item">
+              <div class="tag tag_app">#app design</div>
+            </li>
+            <li class="tags__item">
+              <div class="tag tag_ux">#ux/ui</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="heading">
+      <h2 class="caption">
+        A brand is more<br>
+        than a logo
+      </h2>
+      <p class="block text-sm">
+        In the process of developing the app user interface design we used the following elements, which were found to be the most effective after a series of comparative tests.
+      </p>
+    </div>
+
+    <h3 class="title mb-40">Colors & Typography</h3>
+    <div class="sep mb-80">
+      <div class="sep__base">
+        <div class="lead mb-30">Primary Corporate Typeface</div>
+        {{ imgSmall('gymfit-typo', 'png', 'Primary Corporate Typeface') }}
+      </div>
+      <div class="sep__side">
+        <div class="lead mb-30">Project colors</div>
+        {{ imgSmall('gymfit-colors', 'png', 'Project colors') }}
+      </div>
+    </div>
+
+    <h3 class="title mb-40">UI elements</h3>
+    <div class="sep mb-30">
+      <div class="sep__base">
+        <div class="lead">
+          Simple and clean. We came up with a set of custom elements for Gymfit that aren’t a bore, while also maintaining a sense of professionalism.
+        </div>
+      </div>
+    </div>
+    <div class="sep">
+      <div class="sep__base">
+        {{ imgSmall('gymfit-ui-1', 'png', 'Buttons and Input fields') }}
+      </div>
+      <div class="sep__side">
+        {{ imgSmall('gymfit-ui-2', 'png', 'Category emoji and icons') }}
+      </div>
+    </div>
+  </div>
+
+  <div class="pt-120 pb-120" id="triggerPhone">
+    <div class="box box_small">
+      <div class="heading">
+        <h2 class="caption align-center">Gym profile</h2>
+      </div>
+    </div>
+    <div class="decor-wave">
+      <div class="decor-wave__wrap">
+        <svg class="decor-wave__bg decor-wave__bg_top inline-svg" src="../img/decor-wave-top.svg"></svg>
+        <svg class="decor-wave__bg decor-wave__bg_bottom inline-svg" src="../img/decor-wave-bottom.svg"></svg>
+      </div>
+      <div class="box box_small">
+        <div class="phone">
+          <div class="phone__box" id="targetPhoneBox">
+            <div class="phone__item phone__item_1" id="targetPhone1">
+              <div class="shadow shadow_large">
+                {{ imgSmall('gymfit-profile-1', 'jpg', 'Gym profile', 'nolazy') }}
+              </div>
+            </div>
+            <div class="phone__item phone__item_2" id="targetPhone2">
+              <div class="shadow shadow_large">
+                {{ imgSmall('gymfit-profile-2', 'jpg', 'Gym profile', 'nolazy') }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="box box_small">
+    <h2 class="caption align-center">
+      Coach widgets
+    </h2>
+    <p class="block text-sm align-center">
+      … with beautiful cards and graphics 😍
+    </p>
+  </div>
+  <div class="cover box pt-60">
+    <div class="cover__pic shadow parallax">
+      {{ img('gymfit-widgets', 'png', 'Coach widgets') }}
+    </div>
+  </div>
+</article>
+
+{{ next('MolaMola', 'molamola', '#463EAD') }}
+
+<div class="bottom">
+  <div class="box box_small">
+    <h3 class="bottom__caption caption">
+      Have an idea?<br>
+      Talk to a human
+    </h3>
+    <div class="btn-group">
+      <div class="btn-group__item">
+        <a href="#" data-popup="popup_calendly" class="btn btn_primary"><span class="btn__text">Book a call</span></a>
+      </div>
+      <div class="btn-group__item">
+        <span class="btn-group__text">or</span>
+      </div>
+      <div class="btn-group__item">
+        <a href="/contact.html" class="btn btn_primary"><span class="btn__text">leave a message.</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
