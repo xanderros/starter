@@ -1,8 +1,0 @@
-{% macro img(img,format,alt,nolazy) %}
-<picture>
-  <source type="image/webp" {% if nolazy %}{% else %}data-{% endif %}srcset="/img/{{ img }}_mob.webp, /img/{{ img }}_mob@2x.webp 2x" media="(max-width: 480px)">
-  <source type="image/jpeg" {% if nolazy %}{% else %}data-{% endif %}srcset="/img/{{ img }}_mob.{{ format }}, /img/{{ img }}_mob@2x.{{ format }} 2x" media="(max-width: 480px)">
-  <source type="image/webp" {% if nolazy %}{% else %}data-{% endif %}srcset="/img/{{ img }}.webp, /img/{{ img }}@2x.webp 2x">
-  <img {% if nolazy %}{% else %}class="lazyload" {% endif %}{% if nolazy %}{% else %}data-{% endif %}src="/img/{{ img }}.{{ format }}" {% if nolazy %}{% else %}data-{% endif %}srcset="/img/{{ img }}@2x.{{ format }} 2x" alt="{{ alt }}">
-</picture>
-{% endmacro %}
