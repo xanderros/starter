@@ -1,0 +1,85 @@
+@mixin placeholder($content) {
+	&::-webkit-input-placeholder {
+		color: $content;
+	}
+	&::-moz-placeholder {
+		color: $content;
+	}
+	&:-ms-input-placeholder {
+		color: $content;
+	}
+}
+
+@mixin break-word {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+@mixin text-ellipsis {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+@mixin center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+@mixin center-X {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin center-Y {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+// use this mixin to create scalable elements (usually background images / images) to maintain the ratio.
+// example: @include responsive-ratio(16,9)
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+	$padding: unquote( ( $y / $x ) * 100 + '%' );
+	padding-bottom: $padding;
+}
+
+// gradient text color
+@mixin gradient-text($deg,$color-1,$start,$color-2,$end) {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: $color-1;
+	background-image: linear-gradient($deg, $color-1 $start, $color-2 $end);
+}
+
+// test
+@mixin outline($color) {
+	outline: 1px solid $color;
+}
+
+// inner paddings
+@mixin paddings {
+	padding-left: 25px;
+	padding-right: 25px;
+
+	@media (min-width: $screen-xs) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	@media (min-width: $screen-sm) {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	@media (min-width: $screen-lg) {
+		padding-left: 70px;
+		padding-right: 70px;
+	}
+	@media (min-width: $screen-xl) {
+		padding-left: 90px;
+		padding-right: 90px;
+	}
+	@media (min-width: $screen-xxl) {
+		padding-left: 110px;
+		padding-right: 110px;
+	}
+}
