@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export REPOPATH=/home2/x47491/starter/*
+    - export REPOPATH=/home2/x47491/starter/build/*
     - export SITEPATH=/home2/x47491/public_html/starter.xander.work/
     - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
