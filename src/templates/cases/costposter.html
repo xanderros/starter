@@ -1,0 +1,181 @@
+---
+title: Costposter | Humandone
+
+keywords:
+description:
+
+url: cases/costposter
+
+socialTitle: Costposter
+socialDescription: It’s a service designed to taste the full range of flavors of the services that exist.
+socialImg:
+socialImgSquare:
+socialImgTwitter:
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="trigger" id="triggerParallaxTop"></div>
+
+<article role="main" class="nav-color-black">
+  <header class="top top_case">
+    <div class="top__box box box_small box_padding">
+      <h1 class="caption">Costposter</h1>
+    </div>
+  </header>
+  <div class="cover pt-80 bg-blue-light">
+    <div class="box">
+      <div class="cover__padding">
+        <div class="cover__pic shadow parallax-top">
+          {{ img('costposter-hero', 'jpg', 'costposter', 'nolazy') }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box box_small">
+    <div class="promo pt-150 mb-120">
+      <div class="promo__side">
+        <h4 class="lead">The goal</h4>
+      </div>
+      <div class="promo__base">
+        <p class="promo__text">
+          Responsive adaptive design for an online-discount service designed to encourage people to explore the full range of services around them despite the financial framework that is dictated by life circumstances.
+        </p>
+        <div class="promo__tags">
+          <ul class="tags">
+            <li class="tags__item">
+              <div class="tag tag_web">#web</div>
+            </li>
+            <li class="tags__item">
+              <div class="tag tag_ux">#ux/ui</div>
+            </li>
+            <li class="tags__item">
+              <div class="tag tag_html">#html/css</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="heading">
+      <h2 class="caption">Fonts and things</h2>
+      <p class="block text-sm">Costposter challenged us to come up with a style that was both unique and playful, while keeping a professional, corporate feel. The team got together to experiment with different concepts, and built our way to the style now seen.</p>
+    </div>
+
+    <h3 class="title mb-40">Colors & Typography</h3>
+    <div class="sep mb-80">
+      <div class="sep__base">
+        <div class="lead mb-30">Primary Corporate Typeface</div>
+        {{ imgSmall('costposter-typo', 'png', 'Primary Corporate Typeface') }}
+      </div>
+      <div class="sep__side">
+        <div class="lead mb-30">Project colors</div>
+        {{ imgSmall('costposter-colors', 'png', 'Project colors') }}
+      </div>
+    </div>
+
+    <h3 class="title mb-40">Explanatory illustrations</h3>
+    <div class="lead mb-40">this is how it work...</div>
+
+    <div class="mb-120">
+      <div class="grid grid_steps">
+        <div class="grid__cell">
+          {{ imgSmall('costposter-step-1', 'jpg', 'Choose coupon') }}
+        </div>
+        <div class="grid__cell">
+          {{ imgSmall('costposter-step-2', 'jpg', 'Make a payment') }}
+        </div>
+        <div class="grid__cell">
+          {{ imgSmall('costposter-step-3', 'jpg', 'Show coupon') }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pb-120 bg-blue-light overflow-hidden">
+    <div class="pt-100 decor">
+      <svg class="decor__bg inline-svg" src="../img/decor.svg"></svg>
+      <div class="decor__content box box_small">
+        <div class="heading">
+          <h2 class="caption color-white align-center">Website concept</h2>
+          <p class="text-sm color-white align-center">
+            The website concept was built with a basic component style guide of buttons, typography, colors, and layout.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="box box_small">
+      <div class="shadow shadow_big parallax">
+        {{ img('costposter-concept', 'jpg', '') }}
+      </div>
+    </div>
+  </div>
+
+  <div class="pt-120 mb-120 box box_small">
+    <div class="heading">
+      <h2 class="caption">
+        Partners — this is what we love ❤️
+      </h2>
+      <p class="block text-sm">
+        The website concept was built with a basic component style guide of buttons, typography, colors, and layout.
+      </p>
+    </div>
+    {{ img('costposter-partners', 'png', 'Partner logos') }}
+  </div>
+
+  <div class="pt-120 bg-black">
+    <div class="box box_small">
+      <div class="heading">
+        <h2 class="caption color-white">Admin panel</h2>
+        <p class="block text-sm color-white">
+          We made it easy for all restaurants, shops and others to control each coupon.
+        </p>
+      </div>
+    </div>
+    <div class="cover box">
+      <div class="cover__pic shadow shadow_big parallax">
+        {{ img('costposter-panel', 'jpg', 'Admin panel') }}
+      </div>
+    </div>
+  </div>
+
+  <div class="box box_small">
+    <div class="pt-120 mb-150">
+      <h2 class="caption mb-120">
+        And this is how<br>
+        coupon page<br>
+        look like
+      </h2>
+      <div class="shadow shadow_big parallax">
+        {{ img('costposter-coupon', 'jpg', 'coupon page') }}
+      </div>
+    </div>
+  </div>
+
+
+</article>
+
+{{ next('Cally', 'cally', '#345DFE') }}
+
+<div class="bottom">
+  <div class="box box_small">
+    <h3 class="bottom__caption caption">
+      Have an idea?<br>
+      Talk to a human
+    </h3>
+    <div class="btn-group">
+      <div class="btn-group__item">
+        <a href="#" data-popup="popup_calendly" class="btn btn_primary"><span class="btn__text">Book a call</span></a>
+      </div>
+      <div class="btn-group__item">
+        <span class="btn-group__text">or</span>
+      </div>
+      <div class="btn-group__item">
+        <a href="/contact.html" class="btn btn_primary"><span class="btn__text">leave a message.</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

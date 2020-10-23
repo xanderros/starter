@@ -1,0 +1,209 @@
+---
+title: Molamola | Humandone
+
+keywords:
+description:
+
+url: cases/molamola
+
+socialTitle: Molamola
+socialDescription: It’s a fundraising platform for solving problems and implementing ideas.
+socialImg:
+socialImgSquare:
+socialImgTwitter:
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+<div class="trigger" id="triggerParallaxTop2"></div>
+
+<article role="main" class="nav-color-black">
+  <header class="top top_case">
+    <div class="top__box box box_small box_padding">
+      <h1 class="caption">Molamola</h1>
+    </div>
+  </header>
+  <div class="cover pt-80 bg-blue-light">
+    <div class="box">
+      <div class="cover__padding">
+        <div class="cover__pic shadow parallax-top">
+          {{ img('molamola-hero', 'jpg', 'Molamola', 'nolazy') }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box box_small">
+    <div class="promo pt-150 mb-120">
+      <div class="promo__side">
+        <h4 class="lead">The challenge</h4>
+      </div>
+      <div class="promo__base">
+        <p class="promo__text">
+          Mola Mola is a super easy fundraising platform created for overcoming hurdles and finding easy solutions to complicated problems.
+        </p>
+        <p class="promo__text">
+          Mola mola is an easy way to help those who need your help. It’s up to you whom to support. The main thing is that you can change somebody’s life just in a few clicks.
+        </p>
+        <div class="promo__tags">
+          <ul class="tags">
+            <li class="tags__item">
+              <div class="tag tag_web">#web</div>
+            </li>
+            <li class="tags__item">
+              <div class="tag tag_ux">#ux/ui</div>
+            </li>
+            <li class="tags__item">
+              <div class="tag tag_il">#illustrations</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="heading">
+      <h2 class="caption">The foundation, the brand</h2>
+      <p class="block text-sm">
+        Our team gathered together united by the desire to create something new, something colorful but classic.
+      </p>
+    </div>
+
+    <h3 class="title mb-40">Illustrations & Icons</h3>
+    <div class="mb-60">
+      <div class="lead mb-40">Illustrations</div>
+      <figure class="parallax">
+        {{ img('molamola-illustrations', 'png', 'Molamola Illustrations') }}
+      </figure>
+    </div>
+
+    <div class="mb-60">
+      <div class="lead mb-40">Category icons</div>
+      {{ img('molamola-icons', 'png', 'Category icons') }}
+    </div>
+  </div>
+  <div class="box">
+    <div class="cover cover__padding cover_inner pt-80 mb-80 bg-blue-light">
+      <div class="cover__pic shadow parallax">
+        {{ img('molamola-hero-2', 'jpg', '') }}
+      </div>
+    </div>
+  </div>
+  <div class="box box_small mb-120">
+    <h3 class="title mb-40">Colors & Typography</h3>
+    <div class="sep">
+      <div class="sep__base">
+        <div class="lead mb-30">Primary Corporate Typeface</div>
+        {{ imgSmall('molamola-typo', 'png', 'Primary Corporate Typeface') }}
+      </div>
+      <div class="sep__side">
+        <div class="lead mb-30">Project colors</div>
+        {{ imgSmall('molamola-colors', 'png', 'Project colors') }}
+      </div>
+    </div>
+  </div>
+  <div class="pt-100 pb-140 bg-blue-light">
+    <div class="box box_small">
+      <div class="heading">
+        <h2 class="caption">
+          Some important<br>
+          UI elements
+        </h2>
+        <p class="block text-sm">
+          The whole project is built using these elements.
+        </p>
+      </div>
+      <h3 class="title mb-40">Onboarding elements</h3>
+    </div>
+    <div class="box">
+      <div class="mb-60 shadow">
+        {{ img('molamola-elements', 'png', '') }}
+      </div>
+    </div>
+    <div class="box box_small">
+      <div class="lead">… and this is how it works.</div>
+      <div class="steps">
+        <div class="step">
+          <div class="step__base">
+            <div class="step__count">STEP 1</div>
+            <h4 class="step__title">Launch MolaMola campaign</h4>
+            <p class="step__desc">
+              Fill in the form where you should tell some words about yourself and describe your idea in details to make your dream come true as soon as possible.
+            </p>
+          </div>
+          <div class="step__side">
+            {{ imgSmall('molamola-step-1', 'png', 'Launch MolaMola campaign') }}
+          </div>
+        </div>
+        <div class="step step_reverse">
+          <div class="step__base">
+            <div class="step__count">STEP 2</div>
+            <h4 class="step__title">Share your dream all over the globe</h4>
+            <p class="step__desc">
+              Share the campaign link on every social media and messenger. Ask your friends to spread the word about the fundraising.
+            </p>
+          </div>
+          <div class="step__side">
+            {{ imgSmall('molamola-step-2', 'png', 'Share your dream all over the globe') }}
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__base">
+            <div class="step__count">STEP 3</div>
+            <h4 class="step__title">Get direct transfers from backers</h4>
+            <p class="step__desc">
+              The more active you are in promoting your campaign, the more people know about the fundraiser goal. The money get to your card in real time.
+            </p>
+          </div>
+          <div class="step__side">
+            {{ imgSmall('molamola-step-3', 'png', 'Get direct transfers from backers') }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="shadow">
+        <div class="wall">
+          <h3 class="title mb-40">Donation widget</h3>
+          <div class="lead mb-40">Backer view</div>
+          <div class="mb-40">
+            {{ img('molamola-widget-1', 'png', 'Backer view') }}
+          </div>
+          <div class="lead mb-40">Author view</div>
+          {{ img('molamola-widget-2', 'png', 'Author view') }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box box_small">
+    <h2 class="caption pt-80">It’s all about the details</h2>
+  </div>
+  <div class="screen cover">
+    <div class="screen__img shadow">
+      {{ imgWide('molamola-details', 'png', '') }}
+    </div>
+  </div>
+</article>
+
+{{ next('Costposter', 'costposter', '#FF8002') }}
+
+<div class="bottom">
+  <div class="box box_small">
+    <h3 class="bottom__caption caption">
+      Have an idea?<br>
+      Talk to a human
+    </h3>
+    <div class="btn-group">
+      <div class="btn-group__item">
+        <a href="#" data-popup="popup_calendly" class="btn btn_primary"><span class="btn__text">Book a call</span></a>
+      </div>
+      <div class="btn-group__item">
+        <span class="btn-group__text">or</span>
+      </div>
+      <div class="btn-group__item">
+        <a href="/contact.html" class="btn btn_primary"><span class="btn__text">leave a message.</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

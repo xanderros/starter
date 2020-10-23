@@ -1,0 +1,9 @@
+{% macro next(project,link,color) %}
+{% if color %} <style>.next:hover {background-color: {{ color }};}</style> {% endif %}
+<a class="next nav-color-white" href="/cases/{{ link }}.html" style="">
+  <div class="box box_small">
+    <div class="next__title lead">{{ project }}</div>
+    <div class="caption color-white">Next project</div>
+  </div>
+</a>
+{% endmacro %}

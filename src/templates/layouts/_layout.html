@@ -1,0 +1,77 @@
+{% from "partials/_img.html" import img %}
+{% from "partials/_imgSmall.html" import imgSmall %}
+{% from "partials/_imgWide.html" import imgWide %}
+{% from "partials/_blog.html" import blog %}
+{% from "partials/_next.html" import next %}
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="keywords" content="{{ keywords }}">
+  <meta name="description" content="{{ description }}">
+
+  <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+
+  <link rel="canonical" href="https://humandone.com/{{ url }}">
+
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/gt-walsheim-medium.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/gt-walsheim-bold.woff2" crossorigin>
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="preconnect" href="https://mc.yandex.ru">
+  <link rel="preconnect" href="https://calendly.com">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@humandone">
+  <meta name="twitter:domain" content="humandone.com">
+  <meta name="twitter:title" content="{{ socialTitle }}">
+  <meta name="twitter:description" content="{{ socialDescription }}">
+  <meta name="twitter:image" content="https://humandone.com/img/{% if socialImgTwitter %}{{ socialImgTwitter }}{% else %}social-twitter.jpg{% endif %}">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://humandone.com/{{ url }}?v={{ range(0, 99999) | random }}">
+  <meta property="og:title" content="{{ socialTitle }}">
+  <meta property="og:description" content="{{ socialDescription }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Humandone">
+  <meta property="og:image" content="https://humandone.com/img/{% if socialImg %}{{ socialImg }}{% else %}social-main.jpg{% endif %}">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="https://humandone.com/img/{% if socialImgSquare %}{{ socialImgSquare }}{% else %}social-square.jpg{% endif %}">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="500">
+  <meta property="og:image:height" content="500">
+
+  {% include "../partials/_favicons.html" %}
+</head>
+<body>
+<div class="wrapper{% if scrollAnimations %} scroll-animations{% endif %}{% if bg %} bg-{{ bg }}{% endif %}">
+
+  {% include "partials/_header.html" %}
+
+  <main class="wrapper__content">
+
+    <!-- BEGIN content -->
+    {% block content %}{% endblock %}
+    <!-- END content -->
+
+  </main>
+
+  {% include "partials/_footer.html" %}
+</div>
+
+{% include "partials/_calendly.html" %}
+
+<!-- BEGIN scripts -->
+<script src="/js/script.min.js"></script>
+<!-- END scripts -->
+
+{% include "partials/_metrika.html" %}
+</body>
+</html>
