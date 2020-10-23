@@ -51,9 +51,9 @@ In this case, the SVG icons will be inserted directly into the HTML code.
 - Basic template for all pages - `src/templates/layouts/_layout.html`
 
 #### Images for social networks
-`socialImg: social-main_blog-1.jpg` -------------------- 1200x630px
+`socialImg: social-main_blog-1.jpg` ------------------ 1200x630px
 
-`socialImgSquare: social-square_blog-1.jpg` ---------- 500x500px
+`socialImgSquare: social-square_blog-1.jpg` --------- 500x500px
 
 `socialImgTwitter: social-twitter_blog-1.jpg` ------ 1200x600px
 
