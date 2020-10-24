@@ -39,6 +39,22 @@ $(document).ready(function () {
   var popupShowBtn = document.querySelectorAll("*[data-popup]");
   var popupCloseBtn = document.querySelectorAll(".popup__close");
 
+  function preloadPopupData() {
+    var popupId = this.getAttribute('data-popup');
+    var popupHovered = document.getElementById(popupId);
+    var scriptData = popupHovered.querySelectorAll("script[data-src]");
+
+    if ( scriptData ) {
+      // console.log("sdfsfds");
+      for (var i=0; i<scriptData.length; i++) {
+        if(scriptData[i].getAttribute('data-src')) {
+          scriptData[i].setAttribute('src',scriptData[i].getAttribute('data-src'));
+          scriptData[i].removeAttribute('data-src');
+        }
+      }
+    }
+  }
+
   function showPopup(e) {
     e.preventDefault();
 
@@ -47,17 +63,6 @@ $(document).ready(function () {
 
     popupCurrent.classList.add("popup_show");
     document.querySelector("body").classList.add("overflow-hidden");
-
-    var scriptData = document.querySelectorAll("script[data-src]");
-
-    if ( scriptData ) {
-      for (var i=0; i<scriptData.length; i++) {
-        if(scriptData[i].getAttribute('data-src')) {
-          scriptData[i].setAttribute('src',scriptData[i].getAttribute('data-src'));
-          scriptData[i].removeAttribute('data-src');
-        }
-      }
-    }
   }
 
   function closePopup(e) {
@@ -76,6 +81,8 @@ $(document).ready(function () {
 
   for (var i = 0; i < popupShowBtn.length; ++i) {
     popupShowBtn[i].addEventListener('click', showPopup, false);
+    popupShowBtn[i].addEventListener('mouseenter', preloadPopupData, false);
+    popupShowBtn[i].addEventListener('click', preloadPopupData, false);
   }
   for (var i = 0; i < popupCloseBtn.length; ++i) {
     popupCloseBtn[i].addEventListener('click', closePopup, false);

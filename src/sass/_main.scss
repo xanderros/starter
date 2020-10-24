@@ -1384,6 +1384,11 @@ Example:
   }
 
   // mobile landscape
+  @media (min-width: $screen-xl) and (max-height: $screen-h-md) {
+    &__caption {
+      width: 800px;
+    }
+  }
   @media (max-height: $screen-h-xs) {
     padding-top: $header-height + 10px;
     padding-bottom: 0;
