@@ -45,7 +45,6 @@ $(document).ready(function () {
     var scriptData = popupHovered.querySelectorAll("script[data-src]");
 
     if ( scriptData ) {
-      // console.log("sdfsfds");
       for (var i=0; i<scriptData.length; i++) {
         if(scriptData[i].getAttribute('data-src')) {
           scriptData[i].setAttribute('src',scriptData[i].getAttribute('data-src'));

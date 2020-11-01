@@ -11,7 +11,6 @@ export const paths = {
       './node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
       './node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js',
       './node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js',
-      './node_modules/scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js',//
 			'src/js/main.js'
 		],
 		dest: 'build/js/'
